@@ -29,6 +29,11 @@ public class BookController {
 		return "booklist";
 	}
 	
+	@RequestMapping(value="/login")
+	public String login() {
+		return "login";
+	}  
+	
 	//RESTful service to get all books
 	@RequestMapping(value = "/books", method= RequestMethod.GET)
 	public @ResponseBody List<Book> bookListRest(){
